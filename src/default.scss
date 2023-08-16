@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.navText {
+  color: #0a113d;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+.tabTitle {
+  color: #283168;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+
+  @media (max-width: 991.98px) {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.5px;
+  }
+}
+
+.tabTitleActive {
+  font-weight: 600;
+  border-bottom: 3px solid #01bba1;
+  padding-bottom: 5px;
+}
+
+.title {
+  color: #283168;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.75px;
+}
+
+.userDataNormal {
+  color: #3d424c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.479px;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+}
+
+.columnHeaderTitle {
+  color: #6f7381;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+.cardNormal {
+  color: #3d424c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cardCapitalized {
+  color: #3d424c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.879px;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+}
+
+.cardBodyTitle {
+  color: #3d424c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+.cardBodyBig {
+  color: #3d424c;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cardHeaderBigBold {
+  color: #3d424c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.cardBodyBigBold {
+  color: #3d424c;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.mobileBigBold {
+  color: #3d424c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 163.418%;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+}
+
+.mobileNormal {
+  color: #3d424c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mobileNormalBold {
+  color: #3d424c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.mobileLittle {
+  color: #3d424c;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}

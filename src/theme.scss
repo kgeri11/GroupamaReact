@@ -1,0 +1,15 @@
+@use 'default';
+
+:root[data-theme='default'] {
+  --font-color-darkBlue: #0a113d;
+  --font-color-lightBlue: #283168;
+  --font-color-darkGrey: #3d424c;
+  --font-color-grey: #6f7381;
+  --bg-main: #fafafc;
+  --bg-white: #fff;
+  --bg-menu: #f1f2f4;
+  --main-font: 'Open Sans', sans-serif;
+  --dot-color-grey: #a1caff;
+  --dot-color-green: #01BBA1;
+  --dot-color-red: #DC414F;
+}

@@ -1,0 +1,6 @@
+node_modules
+**/*.module.*
+/dist
+*.scss.d.ts
+css-modules.d.ts
+scss-modules.d.ts

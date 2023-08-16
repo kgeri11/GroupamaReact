@@ -1,0 +1,304 @@
+@import '../../default.scss';
+
+.card {
+  width: 822px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  border: 0;
+  border-radius: 4px;
+  margin-bottom: 16px;
+
+  @media (max-width: 991.98px) {
+    width: 100%;
+  }
+
+  &:first-child {
+    margin-top: 16px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .cardHeader {
+    width: 100%;
+    height: 79px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 991.98px) {
+      height: 102px;
+      padding: 24px 26px;
+    }
+
+    .desktopStatus {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: 991.98px) {
+        display: none;
+      }
+
+      .payMethod {
+        flex-shrink: 0;
+
+        @media (max-width: 991.98px) {
+          width: 100%;
+        }
+      }
+
+      .date {
+        flex-shrink: 0;
+      }
+
+      .status {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+
+        @media (max-width: 991.98px) {
+          display: none;
+
+          img {
+            width: 6px;
+            height: 6px;
+            margin-right: 8px;
+          }
+        }
+      }
+
+      .value {
+        flex-shrink: 0;
+      }
+
+      .id {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+
+        @media (max-width: 991.98px) {
+          display: none;
+        }
+      }
+
+      .text {
+        width: 87px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      button {
+        padding: 0;
+
+        img {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .mobileStatus {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (min-width: 992px) {
+        display: none;
+      }
+
+      .container {
+        display: flex;
+        align-items: flex-end;
+        .dataContainer {
+          display: flex;
+          align-items: center;
+
+          .data {
+            margin-left: 20px;
+
+            .date {
+              white-space: nowrap;
+
+              .attachment {
+                margin-right: 0;
+                height: 17px;
+                width: 17px;
+              }
+            }
+          }
+
+          .btn {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .cardBody {
+    padding: 0;
+
+    .info {
+      height: 90px;
+      width: 100%;
+      padding: 24px 260px 24px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #f1f2f4;
+
+      @media (max-width: 991.98px) {
+        display: none;
+      }
+
+      .period {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .fees {
+        display: flex;
+        justify-content: space-between;
+        width: 247px;
+      }
+
+      .fee {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .accounted {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .title {
+        margin-bottom: 7px;
+      }
+    }
+
+    .receipt {
+      height: 100px;
+      width: 100%;
+      padding: 25px 30px;
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 991.98px) {
+        display: none;
+      }
+
+      .downloads {
+        .title {
+          margin-bottom: 16px;
+        }
+
+        .receipts {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+
+          img {
+            width: 21px;
+            height: 27px;
+            margin-right: 18px;
+          }
+        }
+      }
+    }
+
+    .infoMobile {
+      display: none;
+
+      @media (max-width: 991.98px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #f1f2f4;
+        padding: 24px 16px;
+      }
+
+      .status,
+      .id {
+        margin-bottom: 24px;
+      }
+    }
+
+    .receiptMobile {
+      display: none;
+
+      @media (max-width: 991.98px) {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #f1f2f4;
+        padding: 24px 25px 24px 16px;
+      }
+
+      .title {
+        margin-bottom: 12px;
+      }
+
+      .receipts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .receipt {
+          display: flex;
+          align-items: center;
+
+          img {
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+
+    .feesMobile {
+      display: none;
+
+      @media (max-width: 991.98px) {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #f1f2f4;
+        padding: 24px 30px 24px 16px;
+      }
+
+      .period {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+      }
+
+      .fees {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.statusLight {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+.grey {
+  background-color: var(--dot-color-grey);
+}
+
+.green {
+  background-color: var(--dot-color-green);
+}
+
+.red {
+  background-color: var(--dot-color-red);
+}
