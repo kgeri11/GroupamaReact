@@ -3,6 +3,7 @@
 .card {
   width: 822px;
   background-color: var(--bg-white);
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
   border: 0 !important;
   border-radius: 4px;
@@ -20,7 +21,11 @@
     width: 100%;
     height: 79px;
     background-color: var(--bg-white);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     @media (max-width: 991.98px) {
@@ -31,8 +36,14 @@
     .desktopStatus {
       height: 100%;
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
 
       @media (max-width: 991.98px) {
@@ -40,6 +51,7 @@
       }
 
       .payMethod {
+        -ms-flex-negative: 0;
         flex-shrink: 0;
 
         @media (max-width: 991.98px) {
@@ -48,12 +60,18 @@
       }
 
       .date {
+        -ms-flex-negative: 0;
         flex-shrink: 0;
       }
 
       .status {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -ms-flex-negative: 0;
         flex-shrink: 0;
 
         @media (max-width: 991.98px) {
@@ -68,12 +86,18 @@
       }
 
       .value {
+        -ms-flex-negative: 0;
         flex-shrink: 0;
       }
 
       .id {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -ms-flex-negative: 0;
         flex-shrink: 0;
 
         @media (max-width: 991.98px) {
@@ -84,6 +108,7 @@
       .text {
         width: 87px;
         overflow: hidden;
+        -o-text-overflow: ellipsis;
         text-overflow: ellipsis;
       }
 
@@ -105,10 +130,16 @@
     }
 
     .mobileStatus {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       width: 100%;
       height: 100%;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
 
       @media (min-width: 992px) {
@@ -116,10 +147,18 @@
       }
 
       .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
         align-items: flex-end;
         .dataContainer {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
 
           .data {
@@ -147,8 +186,14 @@
       height: 90px;
       width: 100%;
       padding: 24px 260px 24px 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
       border-bottom: 1px solid var(--bg-menu);
 
@@ -157,23 +202,42 @@
       }
 
       .period {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
       }
 
       .fees {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         width: 247px;
       }
 
       .fee {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
       }
 
       .accounted {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
       }
 
@@ -186,7 +250,11 @@
       height: 100px;
       width: 100%;
       padding: 25px 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
 
       @media (max-width: 991.98px) {
@@ -199,7 +267,11 @@
         }
 
         .receipts {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
           cursor: pointer;
 
@@ -216,8 +288,15 @@
       display: none;
 
       @media (max-width: 991.98px) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         padding-bottom: 16px;
         border-bottom: 1px solid var(--bg-menu);
@@ -234,7 +313,12 @@
       display: none;
 
       @media (max-width: 991.98px) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         border-bottom: 1px solid var(--bg-menu);
         padding: 24px 25px 24px 16px;
@@ -245,12 +329,22 @@
       }
 
       .receipts {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
 
         .receiptItems {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
 
           img {
@@ -264,20 +358,34 @@
       display: none;
 
       @media (max-width: 991.98px) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         border-bottom: 1px solid var(--bg-menu);
         padding: 24px 30px 24px 16px;
       }
 
       .period {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         margin-bottom: 24px;
       }
 
       .fees {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
       }
     }

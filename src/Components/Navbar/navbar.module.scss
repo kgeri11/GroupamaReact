@@ -4,8 +4,14 @@
   width: 1440px;
   height: 100%;
   padding: 0 127px 0 138px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 
   @media (max-width: 991.98px) {
@@ -29,9 +35,16 @@
 .logout {
   width: 93px;
   height: 18px;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
 
@@ -44,8 +57,14 @@
     height: 30px;
     background-color: var(--bg-menu);
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
     @media (min-width: 992px) {
@@ -56,6 +75,7 @@
   img {
     width: 24.6px;
     height: 18px;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
   }
 
