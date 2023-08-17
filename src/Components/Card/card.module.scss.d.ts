@@ -11,6 +11,7 @@ export const cardHeader: string;
 export const cardHeaderBigBold: string;
 export const cardNormal: string;
 export const columnHeaderTitle: string;
+export const container: string;
 export const data: string;
 export const dataContainer: string;
 export const date: string;
@@ -33,6 +34,7 @@ export const navText: string;
 export const payMethod: string;
 export const period: string;
 export const receipt: string;
+export const receiptItems: string
 export const receiptMobile: string;
 export const receipts: string;
 export const red: string;
@@ -45,4 +47,5 @@ export const text: string;
 export const title: string;
 export const userDataNormal: string;
 export const value: string;
-export const container: string
+export const nowrap: string
+export const breakSpace: string

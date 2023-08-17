@@ -13,11 +13,15 @@
 html,
 body,
 #root {
+  padding: 0;
+  margin: 0;
+  width: 100%;
   height: 100%;
+  font-family: var(--main-font);
 }
 
 .navText {
-  color: #0a113d;
+  color: var(--font-color-darkBlue);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -26,7 +30,7 @@ body,
 }
 
 .tabTitle {
-  color: #283168;
+  color: var(--font-color-lightBlue);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -44,12 +48,12 @@ body,
 
 .tabTitleActive {
   font-weight: 600;
-  border-bottom: 3px solid #01bba1;
-  padding-bottom: 5px;
+  border-bottom: 3px solid var(--dot-color-green);
+  padding: 40px 0 42px;
 }
 
 .title {
-  color: #283168;
+  color: var(--font-color-lightBlue);
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
@@ -58,7 +62,7 @@ body,
 }
 
 .userDataNormal {
-  color: #3d424c;
+  color: var(--font-color-darkGrey);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -68,7 +72,7 @@ body,
 }
 
 .columnHeaderTitle {
-  color: #6f7381;
+  color: var(--font-color-grey);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -77,7 +81,7 @@ body,
 }
 
 .cardNormal {
-  color: #3d424c;
+  color: var(--font-color-darkGrey);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -85,7 +89,7 @@ body,
 }
 
 .cardCapitalized {
-  color: #3d424c;
+  color: var(--font-color-darkGrey);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -95,7 +99,7 @@ body,
 }
 
 .cardBodyTitle {
-  color: #3d424c;
+  color: var(--font-color-darkGrey);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -104,7 +108,7 @@ body,
 }
 
 .cardBodyBig {
-  color: #3d424c;
+  color: var(--font-color-darkGrey);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -112,7 +116,7 @@ body,
 }
 
 .cardHeaderBigBold {
-  color: #3d424c;
+  color: var(--font-color-darkGrey);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -120,7 +124,7 @@ body,
 }
 
 .cardBodyBigBold {
-  color: #3d424c;
+  color: var(--font-color-darkGrey);
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
@@ -128,7 +132,7 @@ body,
 }
 
 .mobileBigBold {
-  color: #3d424c;
+  color: var(--font-color-darkGrey);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -138,7 +142,7 @@ body,
 }
 
 .mobileNormal {
-  color: #3d424c;
+  color: var(--font-color-darkGrey);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -146,7 +150,7 @@ body,
 }
 
 .mobileNormalBold {
-  color: #3d424c;
+  color: var(--font-color-darkGrey);
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -154,7 +158,7 @@ body,
 }
 
 .mobileLittle {
-  color: #3d424c;
+  color: var(--font-color-darkGrey);
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
